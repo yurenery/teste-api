@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Certificado: <?= $certificado->nome; ?></h3>
+    </div>
+    <div class="panel-body">
+        <h4>Informações do certificado</h4>
+        <p>
+            <b>Subject DN:</b> <?= $certificado->subjectDn; ?>
+        </p>
+        <p>
+            <b>Issuer DN:</b> <?= $certificado->issuerDn; ?>
+        </p>
+        <p>
+            <b>Data de validade:</b>
+            <div style="margin-left: 10px">Não antes de: <?= $certificado->notBefore; ?></div>
+            <div style="margin-left: 10px">Não depois de: <?= $certificado->notAfter; ?></div>
+        </p>
+    </div>
+</div>
+
+<div>
+    <a class="btn btn-primary" href="/">Voltar</a>
+</div>
